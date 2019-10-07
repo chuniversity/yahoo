@@ -1,0 +1,123 @@
+body { 
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+
+.tagline {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 3rem;
+}
+
+/* Responsive Tagline Text Sizing */
+
+@media screen and (min-width: 0px) and (max-width: 325px){
+  .tagline {
+    font-size: .6rem;
+    }
+  }
+
+@media screen and (min-width: 326px) and (max-width: 500px){
+  .tagline {
+    font-size: 1rem;
+    }
+  }
+
+@media screen and (min-width: 500px) and (max-width: 680px){
+  .tagline {
+    font-size: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 681px) and (max-width: 900px){
+    .tagline {
+      font-size: 2.2rem;
+      }
+    }
+
+
+/* End Responsive Tagline Text Sizing */
+
+
+/* Menu */
+
+li {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  list-style: none;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  height: 40px;
+  border-bottom: .1px solid #d1d1d1;
+}
+
+.menu-left {
+  grid-area: left;
+}
+.menu-right {
+  grid-area: right;
+  display: flex;
+  flex direction: row;
+  justify-content: flex-end;
+  font-size: .8rem;
+  font-family: 'sans-serif';
+  padding-right: 20px;
+}
+
+ul.menu2 {
+  display: flex;
+  flex direction: row;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  color: #fff;
+}
+
+/* Responsive Menu Sizing */
+
+@media screen and (min-width: 0px) and (max-width: 545px){
+  .menu {
+    display: none;
+    }
+  .menu-left {
+    display: none;
+  }
+  .menu-right {
+    display: none;
+  }
+  .menu2 {
+    display: none;
+  }
+  }
+
+@media screen and (min-width: 545px) and (max-width: 715px){
+  .menu {
+    grid-template-columns: 1fr 99fr;
+    }
+  }
+  @media screen and (min-width: 715px) and (max-width: 1065px){
+    .menu {
+      grid-template-columns: 1fr 3fr;
+      }
+    }
+
+
+/* End Responsive Menu Text Sizing */

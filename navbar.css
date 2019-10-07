@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Vertexio'; 
+  src: url('/vertexio/Vertexio.otf'); 
+}
+
+
+
+nav {
+  display: grid;
+  grid-template-columns: 70px 7fr 3fr;
+  padding: 0px;
+  margin: 0px;
+  grid-gap: 0px;
+  grid-template-areas: "logo search login";
+  background-color: #fff;
+  max-height: 70px;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+
+.search {
+  grid-area: search;
+  display: block;
+  text-align: -webkit-center;
+}
+
+.search-input {
+  width: 100%;
+  height: 70px;
+  border: none;
+  background: transparent;
+  font-family: 'Roboto Slab';
+  font-size: 2rem;
+  opacity: .55;
+}
+
+/* Responsive Search Text Sizing */
+
+@media screen and (min-width: 0px) and (max-width: 414px){
+  .search-input {
+    font-size: .8rem;
+    }
+  }
+
+@media screen and (min-width: 415px) and (max-width: 527px){
+  .search-input {
+    font-size: 1.1rem;
+    }
+  }
+  @media screen and (min-width: 528px) and (max-width: 660px){
+    .search-input {
+      font-size: 1.5rem;
+      }
+    }
+
+
+/* End Responsive Search Text Sizing */
+
+*:focus {
+  outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+#form {
+  display: block;
+  padding-left: 20px;
+}
+
+.login {
+  grid-area: login;
+}
+
+
+.login2{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  opacity: 55%;
+  height: 100%;
+}
+
+.greeting {
+  font-family: 'Lato', sans-serif;
+  opacity: .55;
+  padding-right: 7px;
+  text-decoration: none;
+}
+/* Hide Greeting on Mobile */
+
+@media screen and (min-width: 0px) and (max-width: 645px){
+  .greeting {
+      display: none;
+    }
+  }
+
+.profile {
+  border: solid;
+  border-width:   1.2px;
+  border-color: #e6e6e6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
